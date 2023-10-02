@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&family=Play&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="../dist/output.css" rel="stylesheet">
+
+  <title>Newsletter - Human website</title>
+</head>
+<!--header-->
+<body class="bg-col6 text-col4 font-play px-6 pt-8">
+    <a href="/src/index.html">
+    <img src="/logo.png" class="absolute object-contain pr-6 md:pr-0 h-24 w-24 md:h-40 md:w-40">
+    </a>
+    <h1 class="flex items-center justify-center md:text-3xl text-2xl sm:pb-8 pt-8 pl-12 pb-8 md:pl-0 text-col5">Sign up to our newsletter</h1>
+<form>
+    <!--name, address, number-->
+    <div class="grid gap-6 mb-6 md:grid-cols-2 sm:pt-20">
+        <div>
+            <label for="first_name" class="block mb-2 text-sm md:text-lg">First name</label>
+            <input type="text" id="first_name" class="bg-col2 border border-col1 text-sm md:text-lg rounded-lg focus:ring-col1 focus:border-col1 block w-full p-2.5" placeholder="Justah" required>
+        </div>
+        <div>
+            <label for="last_name" class="block mb-2 text-sm md:text-lg">Last name</label>
+            <input type="text" id="last_name" class="bg-col2 border border-col1 text-sm md:text-lg rounded-lg focus:ring-col1 focus:border-col1 block w-full p-2.5" placeholder="Uman" required>
+        </div>
+        <div>
+            <label for="address" class="block mb-2 text-sm md:text-lg">Home address</label>
+            <input type="text" id="address" class="bg-col2 border border-col1 text-sm md:text-lg rounded-lg focus:ring-col1 focus:border-col1 block w-full p-2.5" placeholder="123 Earth Lane, Chicago" required>
+        </div>  
+        <div>
+            <label for="phone" class="block mb-2 text-sm md:text-lg">Phone number</label>
+            <input type="tel" id="phone" min="1" class="bg-col2 border border-col1 text-sm md:text-lg rounded-lg focus:ring-col1 focus:border-col1 block w-full p-2.5 eholder-gray-400" placeholder="666-1234" pattern="[0-9]{7}" required>
+        </div>
+        <div>
+            <label for="age" class="block mb-2 text-sm md:text-lg">Age (in months)</label>
+            <input type="number" id="age" class="bg-col2 border border-col1 text-sm md:text-lg rounded-lg focus:ring-col1 focus:border-col1 block w-full p-2.5" placeholder="" required>
+        </div>
+        <div>
+            <label for="email" class="block mb-2 text-sm md:text-lg">Email address</label>
+        <input type="email" id="email" class="bg-col2 border border-col1 text-sm md:text-lg rounded-lg focus:ring-col1 focus:border-col1 block w-full p-2.5" placeholder="justah.uman@earth.co.uk" required>
+        </div>
+    </div>
+    <div class="flex justify-around pt-4 pb-8">
+    <!--are you human?-->
+        <div class="basis-1/2">
+    <p class="text-sm md:text-lg rounded-lg text-center">Are you a human?
+        <br>
+        <input id="human" type="radio" value="yes" name="human" class="w-4 h-4 text-col1 bg-col1 border-col1 focus:ring-col1">
+        <label for="human" class="ml-2 text-sm md:text-lg pr-8">Yes</label>
+        <input id="human" type="radio" value="no" name="human" class="w-4 h-4 text-col1 bg-col1 border-col1 focus:ring-col1">
+        <label for="human" class="ml-2 text-sm md:text-lg">No</label></p>
+        </div>
+        <!--do you have cats?-->
+        <div class="basis-1/2">
+    <p class="text-sm md:text-lg rounded-lg text-center">Do you have cats?
+        <br>
+        <input id="cats" type="radio" value="yes" name="cats" class="w-4 h-4 text-col1 bg-col1 border-col1 focus:ring-col1">
+        <label for="cats" class="ml-2 text-sm md:text-lg pr-8">Yes</label>
+        <input id="cats" type="radio" value="no" name="cats" class="w-4 h-4 text-col1 bg-col1 border-col1 focus:ring-col1">
+        <label for="cats" class="ml-2 text-sm md:text-lg">No</label></p>
+        </div>
+    </div>
+</div>
+    <!--t&c-->
+    <div class="flex items-start mb-6">
+        <div class="flex items-center h-5">
+        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-emerald-400 bg-emerald-200 focus:ring-3 focus:ring-emerald-700" required>
+        </div>
+        <label for="remember" class="ml-2 text-sm md:text-lg">I agree with the <a href="#" class="text-col5 hover:underline">terms and conditions</a>.</label>
+    </div>
+    <!--submit-->
+    <button type="submit" class="bg-col5 text-col6 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300 font-medium rounded-lg text-sm md:text-lg w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+</form>
+</body>
